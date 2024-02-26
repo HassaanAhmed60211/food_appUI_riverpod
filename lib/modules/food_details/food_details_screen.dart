@@ -141,9 +141,12 @@ class FoodDetailsPage extends HookConsumerWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Align(
                             alignment: Alignment.centerRight,
-                            child: Image.asset(
-                              homeRead.popularItems[index].imgPath,
-                              height: context.screenHeight * 0.34,
+                            child: Hero(
+                              tag: homeRead.popularItems[index].title,
+                              child: Image.asset(
+                                homeRead.popularItems[index].imgPath,
+                                height: context.screenHeight * 0.34,
+                              ),
                             ),
                           ),
                         )

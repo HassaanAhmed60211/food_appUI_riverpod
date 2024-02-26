@@ -11,7 +11,7 @@ class FoodApp extends StatelessWidget {
         useMaterial3: true,
         indicatorColor: Colors.white,
       ),
-      home: const LoginPage(),
+      home: LoginPage(),
     );
   }
 }

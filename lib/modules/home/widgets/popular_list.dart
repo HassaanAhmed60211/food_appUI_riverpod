@@ -49,9 +49,12 @@ class PopularList extends ConsumerWidget {
                       children: [
                         SizedBox(
                           height: 80,
-                          child: Image.asset(
-                            item.imgPath,
-                            fit: BoxFit.cover,
+                          child: Hero(
+                            tag: item.title,
+                            child: Image.asset(
+                              item.imgPath,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Spaces.smallh,
